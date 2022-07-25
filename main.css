@@ -1,0 +1,197 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.top a {
+    color: black;
+}
+
+
+.logo {
+    flex: 1;
+    margin: 0;
+}
+
+nav {
+    flex: 3;
+    text-transform: uppercase;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top li {
+    list-style: none;
+}
+
+.action {
+    flex: 1;
+    margin: 0 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action a {
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.action a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(255, 182, 193, 0.59)), url("images/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 3em 0 0 0;
+}
+
+
+.button-white {
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    margin-top: 2em;
+    border-radius: 15px;
+}
+
+
+.hero a:hover {
+    background-color: white;
+    color: lightpink;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    color: white;
+    gap: 0.5em;
+    margin: 0 auto;
+}
+
+.container a {
+    color: white;
+    margin: 0;
+}
+
+
+.blog-item {
+    background-image: url("images/blog-background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 6em;
+    text-align: center;
+}
+
+.blog-item:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(255, 182, 193, 0.59)), url("images/blog-background.jpg");
+    transition: background-image 2s;
+    color: #000000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+    color: white;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-image: url("images/blog-background.jpg");
+    background-size: cover;
+    padding: 4em 6em;
+    text-align: center;
+    max-width: 300px;
+}
+
+.item-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    .container a {
+        width: 100%;
+    }
+
+}
+
+.fuck-this {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
